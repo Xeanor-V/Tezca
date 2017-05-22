@@ -1,0 +1,5 @@
+packages/
+Tezca/obj/
+Tezca/bin/Debug/Mono.CSharp.dll.mdb
+Tezca/bin/
+*.suo
