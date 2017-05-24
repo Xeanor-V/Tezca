@@ -9,12 +9,15 @@ namespace Tezca
     [Activity(Label = "Tezca", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        private Button InfoButton;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-           FindViewById<Button>(Resource.Id.InfoButton).Click += OnInfoClick;
-           FindViewById<Button>(Resource.Id.AddItemButton).Click += OnAddItemClick;
+            InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
+            FindViewById<Button>(Resource.Id.AddItemButton).Click += OnAddItemClick;
+            
+            InfoButton.Click += OnInfoClick;
         }
 
         void OnAddItemClick(object sender, EventArgs e)
@@ -24,8 +27,9 @@ namespace Tezca
         }
         void OnInfoClick(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(InfoActivity));
+            Intent intent = new Intent(this, typeof(InfoActivity));
             StartActivity(intent);
+            
         }
     }
 }
