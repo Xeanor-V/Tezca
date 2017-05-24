@@ -14,10 +14,10 @@ namespace Tezca
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-            InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
-            FindViewById<Button>(Resource.Id.AddItemButton).Click += OnAddItemClick;
+           // InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
+            //FindViewById<Button>(Resource.Id.AddItemButton).Click += OnAddItemClick;
             
-            InfoButton.Click += OnInfoClick;
+           // InfoButton.Click += OnInfoClick;
         }
 
         void OnAddItemClick(object sender, EventArgs e)
