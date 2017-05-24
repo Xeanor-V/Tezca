@@ -13,4 +13,22 @@
     <item name="android:shadowDy" >1</item>
     <item name="android:shadowRadius" >2</item>
   </style>
+
+  <style name ="App_Background_Light">
+    <item name ="android:background" >#FFF3E0</item>
+  </style>
+
+  <style name ="App_Background_Bold">
+    <item name ="android:background" >#FF9800</item>
+  </style>
+
+  <style name ="EditText_light">
+    <item name ="android:background" >##FFF3E0</item>
+    <item name ="android:textColor" >#FFD180</item>
+    <item name = "android:layout_height">wrap_content</item>
+    <item name = "android:layout_width">wrap_content</item>
+    <item name =" android:textSize"> 30sp</item>
+    
+    
+  </style>
 </resources>
