@@ -100,13 +100,16 @@ namespace Tezca
 			public const int Normal_EditText = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int red_button = 2130837512;
+			public const int ProgessBar_Circular = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int Register_EditText = 2130837513;
+			public const int red_button = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int Text_Button = 2130837514;
+			public const int Register_EditText = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int Text_Button = 2130837515;
 			
 			static Drawable()
 			{
@@ -171,6 +174,9 @@ namespace Tezca
 			
 			// aapt resource value: 0x7f070000
 			public const int nameInput = 2131165184;
+			
+			// aapt resource value: 0x7f070012
+			public const int progressBar = 2131165202;
 			
 			// aapt resource value: 0x7f070003
 			public const int saveButton = 2131165187;

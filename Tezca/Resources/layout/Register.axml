@@ -45,13 +45,31 @@
         android:background="@drawable/register_edittext"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:id="@+id/Pass2" />
-    <Button
-        android:text="Register now"
-        android:textColor="@drawable/text_button"
-        style="@style/Button_Normal"
-        android:layout_width="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/Normal_Button"
-        android:id="@+id/RegisterButton" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            android:text="Register now"
+            android:textColor="@drawable/text_button"
+            style="@style/Button_Normal"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/Normal_Button"
+            android:layout_centerInParent="true"
+            android:id="@+id/RegisterButton" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"
+            android:progressDrawable="@drawable/progessbar_circular"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </FrameLayout>
 </LinearLayout>
