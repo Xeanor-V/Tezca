@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Tezca
+namespace Tezca.Logic.Comm
 {
     class ProductResponse
     {

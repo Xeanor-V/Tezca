@@ -4,5 +4,6 @@
     <SelectedDevice>HUAWEI G7-L03</SelectedDevice>
     <DefaultDevice>VisualStudio_android-23_arm_phone</DefaultDevice>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredTheme>Theme.Custom</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

@@ -9,8 +9,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Tezca.Logic.Comm;
 
-namespace Tezca
+namespace Tezca.Logic.Activities
 {
     [Activity(Label = "AddItemActivity")]
     public class AddItemActivity : Activity

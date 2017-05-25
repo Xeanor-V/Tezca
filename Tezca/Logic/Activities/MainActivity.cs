@@ -4,7 +4,7 @@ using Android.Content;
 using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
-namespace Tezca
+namespace Tezca.Logic.Activities
 {
     [Activity(Label = "Tezca", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
@@ -15,9 +15,15 @@ namespace Tezca
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
            // InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
-            //FindViewById<Button>(Resource.Id.AddItemButton).Click += OnAddItemClick;
+            FindViewById<Button>(Resource.Id.RegisterButton).Click += OnRegisterClick;
             
            // InfoButton.Click += OnInfoClick;
+        }
+
+        void OnRegisterClick(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(RegisterActivity));
+            StartActivity(intent);
         }
 
         void OnAddItemClick(object sender, EventArgs e)

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Tezca.Tezca" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="16" />
   <application android:label="Tezca"
-               android:theme="@android:style/Theme.Material.Light">               
+               android:theme="@style/Theme.Custom">               
                ></application>
   
 </manifest>

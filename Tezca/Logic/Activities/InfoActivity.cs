@@ -12,8 +12,9 @@ using Android.Widget;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using Tezca.Logic.Comm;
 
-namespace Tezca
+namespace Tezca.Logic.Activities
 {
     [Activity(Label = "InfoActivity")]
     public class InfoActivity : Activity

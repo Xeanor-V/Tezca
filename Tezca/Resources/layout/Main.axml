@@ -3,30 +3,66 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/App_Background_Bold"
     android:minWidth="25px"
     android:minHeight="25px"
     android:layout_gravity="center">
-  <ImageView
-      android:id="@+id/imageView1"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:src="@drawable/Logo"
-      android:layout_centerInParent="true" />
-  <EditText
-      android:hint="Usuario"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      style="@style/EditText_Light"
-      android:gravity="center"
-      android:layout_marginTop="30dp"
-      android:layout_marginBottom="20dp" />
-  <EditText
-      android:hint="Password"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      style="@style/EditText_Light"
-      android:gravity="center"
-      android:layout_marginTop="10dp"
-      android:layout_marginBottom="10dp" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="277.5dp"
+        android:src="@drawable/Logo"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0.0dp" />
+    <EditText
+        android:hint="User"
+        android:layout_width="300dp"
+        android:layout_height="40.0dp"
+        style="@style/EditText_Light"
+        android:background="@drawable/normal_edittext"
+        android:gravity="center"
+        android:layout_marginTop="3.0dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/editText1"
+        android:layout_gravity="center" />
+    <EditText
+        android:hint="Password"
+        android:layout_width="300dp"
+        android:layout_height="40.0dp"
+        style="@style/EditText_Light"
+        android:background="@drawable/normal_edittext"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/editText2"
+        android:layout_gravity="center"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="286.5dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.0dp">
+        <Button
+            android:text="Login"
+            style="@style/Button_Normal"
+            android:textColor="@drawable/text_button"
+            android:foreground="#ffffe0b2"
+            android:layout_width="107.0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/Normal_Button"
+            android:id="@+id/LoginButton" />
+        <Button
+            android:text="Register"
+            android:textColor="@drawable/text_button"
+            style="@style/Button_Normal"
+            android:layout_width="116.0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/Normal_Button"
+            android:id="@+id/RegisterButton"
+            android:layout_marginLeft="72.0dp" />
+    </LinearLayout>
 </LinearLayout>

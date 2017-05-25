@@ -13,7 +13,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace Tezca
+namespace Tezca.Logic.Comm
 {
     class Communication
     {

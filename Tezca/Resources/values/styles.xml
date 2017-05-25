@@ -23,11 +23,42 @@
   </style>
 
   <style name ="EditText_Light">
-    <item name ="android:background" >#FFF3E0</item>
-    <item name ="android:textColor" >#FFD180</item>
     <item name = "android:layout_height">wrap_content</item>
     <item name = "android:layout_width">wrap_content</item>
-
-
+    <item name ="android:maxLength">16</item>
+    <item name ="android:textColor">#ffffa726</item>
   </style>
+
+  <style name ="EditText_Light_Register">
+
+    <item name ="android:maxLength">32</item>
+    <item name ="android:textColor">#ffffa726</item>
+    <item name ="android:layout_width">300dp</item>
+    <item name ="android:layout_height">50dp</item>
+    <item name ="android:layout_gravity">left</item>
+    <item name ="android:gravity">left</item>
+    <item name ="android:layout_marginBottom">20.0dp</item>
+    <item name ="android:layout_marginTop">2.0dp</item>
+    <item name ="android:layout_marginLeft">20.0dp</item>
+    <item name = "android:drawablePadding">20dp</item>
+    <item name ="android:paddingLeft">0dp</item>
+    <item name ="android:paddingRight">12dp</item>
+    <item name ="android:paddingTop">20dp</item>
+    <item name ="android:paddingBottom">12dp</item>
+  </style>
+
+  <style name ="TextView_Light">
+    <item name = "android:layout_height">wrap_content</item>
+    <item name = "android:layout_width">wrap_content</item>
+    <item name ="android:textColor">#FFF3E0</item>
+    <item name ="android:textSize">40sp</item>
+    
+  </style>
+
+  <style name ="Button_Normal">
+    <item name ="android:layout_height">48dp</item>
+    <item name ="android:textSize">20sp</item>
+  </style>
+
+  
 </resources>

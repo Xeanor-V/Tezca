@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_gravity="center">
+    <TextView
+        style="@style/TextView_Light"
+        android:text="Register"
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:layout_margin="20.0dp" />
+    <EditText
+        android:hint="User"
+        style="@style/EditText_Light_Register"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:background="@drawable/register_edittext"
+        android:id="@+id/User" />
+    <EditText
+        android:hint="Bussines Name"
+        style="@style/EditText_Light_Register"
+        android:background="@drawable/register_edittext"
+        android:drawableLeft="@drawable/ic_business_black_24dp"
+        android:id="@+id/Bname" />
+    <EditText
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        style="@style/EditText_Light_Register"
+        android:background="@drawable/register_edittext"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:id="@+id/Email" />
+    <EditText
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/EditText_Light_Register"
+        android:background="@drawable/register_edittext"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:id="@+id/Pass1" />
+    <EditText
+        android:hint="Re-type Password"
+        android:inputType="textPassword"
+        style="@style/EditText_Light_Register"
+        android:background="@drawable/register_edittext"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:id="@+id/Pass2" />
+    <Button
+        android:text="Register now"
+        android:textColor="@drawable/text_button"
+        style="@style/Button_Normal"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/Normal_Button"
+        android:id="@+id/RegisterButton" />
+</LinearLayout>
