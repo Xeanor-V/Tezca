@@ -15,35 +15,35 @@
     <EditText
         android:hint="User"
         style="@style/EditText_Light_Register"
-        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:drawableLeft="@drawable/ic_account_box_white_24dp"
         android:background="@drawable/register_edittext"
         android:id="@+id/User" />
     <EditText
         android:hint="Bussines Name"
         style="@style/EditText_Light_Register"
         android:background="@drawable/register_edittext"
-        android:drawableLeft="@drawable/ic_business_black_24dp"
+        android:drawableLeft="@drawable/ic_business_white_24dp"
         android:id="@+id/Bname" />
     <EditText
         android:hint="Email"
         android:inputType="textWebEmailAddress"
         style="@style/EditText_Light_Register"
         android:background="@drawable/register_edittext"
-        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableLeft="@drawable/ic_email_white_24dp"
         android:id="@+id/Email" />
     <EditText
         android:hint="Password"
         android:inputType="textPassword"
         style="@style/EditText_Light_Register"
         android:background="@drawable/register_edittext"
-        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
         android:id="@+id/Pass1" />
     <EditText
         android:hint="Re-type Password"
         android:inputType="textPassword"
         style="@style/EditText_Light_Register"
         android:background="@drawable/register_edittext"
-        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
         android:id="@+id/Pass2" />
     <FrameLayout
         android:layout_width="match_parent"

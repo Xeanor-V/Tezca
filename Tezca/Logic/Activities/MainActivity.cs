@@ -26,8 +26,8 @@ namespace Tezca.Logic.Activities
             FindViewById<Button>(Resource.Id.LoginButton).Click += OnLoginClick;
             // InfoButton.Click += OnInfoClick;
 
-            var intent = new Intent(this, typeof(ProductActivity));
-            StartActivity(intent);
+           // var intent = new Intent(this, typeof(ProductActivity));
+           // StartActivity(intent);
         }
 
         void OnRegisterClick(object sender, EventArgs e)
@@ -67,13 +67,18 @@ namespace Tezca.Logic.Activities
                     response = (UserResponse)JsonConvert.DeserializeObject(objText, typeof(UserResponse));
                 }
             }
-            
-            if(response.UsuarioH.Count == 1 && response.PassH.Count == 1)
+
+            if (response.UsuarioH.Count == 1 && response.PassH.Count == 1)
             {
                 User_data Udata = User_data.Instance;
                 Udata.User = response.UsuarioH[0];
                 Intent intent = new Intent(this, typeof(ProductActivity));
                 StartActivity(intent);
+            }
+            else
+            {
+                Toast.MakeText(this, "Incorrect user or password",
+                    ToastLength.Short).Show();
             }
 
         }

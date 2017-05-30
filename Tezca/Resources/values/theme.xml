@@ -9,7 +9,7 @@
   <!--parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
       <item name="android:colorBackground">@color/theme_devicedefault_light_noactionbar_fullscreen_background</item>
     <item name="android:windowBackground">?android:attr/colorBackground</item>-->
-  <style name="Theme.Custom" parent="android:Theme.Holo.Light.DarkActionBar">
+  <style name="Theme.Custom" parent="Theme.AppCompat.Light.DarkActionBar">
     <item name="android:colorBackground">@color/theme_devicedefault_light_noactionbar_fullscreen_background</item>
     <item name="android:windowBackground">?android:attr/colorBackground</item>
     <item name="android:colorPrimary">#ffffa726</item>
@@ -23,6 +23,8 @@
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
     <item name="android:windowFullscreen">true</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
   </style>
 
 </resources>
