@@ -5,8 +5,11 @@
   <color name="theme_devicedefault_dialog_background">#fffe9f23</color>
   <color name="theme_material_light_voice_background">#ffffa027</color>
   <color name="theme_devicedefault_background">#ffffa319</color>
-  <style name="Prueba" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen" />
-  <style name="Theme.Custom" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+  <style name="Prueba" parent="android:Theme.Holo.Light.DarkActionBar" />
+  <!--parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
+      <item name="android:colorBackground">@color/theme_devicedefault_light_noactionbar_fullscreen_background</item>
+    <item name="android:windowBackground">?android:attr/colorBackground</item>-->
+  <style name="Theme.Custom" parent="android:Theme.Holo.Light.DarkActionBar">
     <item name="android:colorBackground">@color/theme_devicedefault_light_noactionbar_fullscreen_background</item>
     <item name="android:windowBackground">?android:attr/colorBackground</item>
     <item name="android:colorPrimary">#ffffa726</item>
@@ -17,6 +20,9 @@
     <item name="android:colorControlNormal">#ffffb74d</item>
     <item name="android:colorControlActivated">#ffffe0b2</item>
     <item name="android:colorButtonNormal">#ffff8f00</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
   </style>
 
 </resources>

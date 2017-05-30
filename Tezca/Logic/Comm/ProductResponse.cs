@@ -17,5 +17,12 @@ namespace Tezca.Logic.Comm
         public List<string> Nombre { get; set; }
         public List<string> Precio { get; set; }
         public List<string> Descripcion { get; set; }
+
+        public ProductResponse()
+        {
+            Nombre = new List<string>();
+            Precio = new List<string>();
+            Descripcion = new List<string>();
+        }
     }
 }

@@ -50,9 +50,8 @@ namespace Tezca.Logic.Activities
             }
             Pass1.Hint = "Password";
             Register.Enabled = false;
-           Register.Visibility = ViewStates.Invisible;
+            Register.Visibility = ViewStates.Invisible;
             Pbar.Visibility = ViewStates.Visible;
-
             Hash_Machine hasher = new Hash_Machine();
             Communication comm = new Communication();
             Query negocioQuery = new Query();
@@ -70,7 +69,8 @@ namespace Tezca.Logic.Activities
             contactoQuery.Valores.Add("-");
             comm.send(contactoQuery);
 
-
+            Intent intent = new Intent(this, typeof(MainActivity));
+            StartActivity(intent);
         }
 
     }

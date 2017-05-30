@@ -4,8 +4,15 @@ using Android.Content;
 using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
+using Tezca.Logic.Util;
+using Tezca.Logic.Comm;
+using System.Net;
+using System.IO;
+using Newtonsoft.Json;
+
 namespace Tezca.Logic.Activities
 {
+    
     [Activity(Label = "Tezca", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
@@ -16,14 +23,59 @@ namespace Tezca.Logic.Activities
             SetContentView(Resource.Layout.Main);
            // InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
             FindViewById<Button>(Resource.Id.RegisterButton).Click += OnRegisterClick;
-            
-           // InfoButton.Click += OnInfoClick;
+            FindViewById<Button>(Resource.Id.LoginButton).Click += OnLoginClick;
+            // InfoButton.Click += OnInfoClick;
+
+            var intent = new Intent(this, typeof(ProductActivity));
+            StartActivity(intent);
         }
 
         void OnRegisterClick(object sender, EventArgs e)
         {
             Intent intent = new Intent(this, typeof(RegisterActivity));
             StartActivity(intent);
+        }
+
+        void OnLoginClick(object sender, EventArgs e)
+        {
+            EditText Login = FindViewById<EditText>(Resource.Id.LoginText);
+            EditText Pass = FindViewById<EditText>(Resource.Id.PassText);
+            Query query = new Query();
+            Communication comm = new Communication();
+            query.Tipo = 0;
+
+
+            int HU = new Hash_Machine().getHash(Login.Text);
+            int HP = new Hash_Machine().getHash(Pass.Text);
+
+            query.Tablas.Add("Negocio");
+            query.Valores.Add("usuarioH");
+            query.Valores.Add("passH");
+
+            query.Extras.Add("usuarioH = '" + HU + "' ");
+            query.Extras.Add("passH = '" + HP + "' ");
+
+            UserResponse response = new UserResponse();
+
+            using (var httpReponse = (HttpWebResponse)comm.send(query))
+            {
+
+                using (var reader = new StreamReader(httpReponse.GetResponseStream()))
+                {
+                    //JavaScriptSerializer js = new JavaScriptSerializer();
+                    var objText = reader.ReadToEnd();
+                    response = (UserResponse)JsonConvert.DeserializeObject(objText, typeof(UserResponse));
+                }
+            }
+            
+            if(response.UsuarioH.Count == 1 && response.PassH.Count == 1)
+            {
+                User_data Udata = User_data.Instance;
+                Udata.User = response.UsuarioH[0];
+                Intent intent = new Intent(this, typeof(ProductActivity));
+                StartActivity(intent);
+            }
+
         }
 
         void OnAddItemClick(object sender, EventArgs e)
@@ -33,6 +85,7 @@ namespace Tezca.Logic.Activities
         }
         void OnInfoClick(object sender, EventArgs e)
         {
+            
             Intent intent = new Intent(this, typeof(InfoActivity));
             StartActivity(intent);
             
