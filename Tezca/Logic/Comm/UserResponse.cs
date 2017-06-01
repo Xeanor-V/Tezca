@@ -16,6 +16,8 @@ namespace Tezca.Logic.Comm
     {
         public List<string> UsuarioH { get; set; }
         public List<string> PassH { get; set; }
+        public List<string> Nombre { get; set; }
+        public List<string> NegocioID { get; set; }
 
     }
 }

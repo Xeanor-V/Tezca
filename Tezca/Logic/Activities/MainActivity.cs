@@ -19,15 +19,16 @@ namespace Tezca.Logic.Activities
         private Button InfoButton;
         protected override void OnCreate(Bundle bundle)
         {
+           
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
            // InfoButton = FindViewById<Button>(Resource.Id.InfoButton);
             FindViewById<Button>(Resource.Id.RegisterButton).Click += OnRegisterClick;
             FindViewById<Button>(Resource.Id.LoginButton).Click += OnLoginClick;
             // InfoButton.Click += OnInfoClick;
-
-           // var intent = new Intent(this, typeof(ProductActivity));
-           // StartActivity(intent);
+          
+          /* var intent = new Intent(this, typeof(AddCharActivity));
+           StartActivity(intent);*/
         }
 
         void OnRegisterClick(object sender, EventArgs e)
@@ -51,6 +52,8 @@ namespace Tezca.Logic.Activities
             query.Tablas.Add("Negocio");
             query.Valores.Add("usuarioH");
             query.Valores.Add("passH");
+            query.Valores.Add("Nombre");
+            query.Valores.Add("NegocioID");
 
             query.Extras.Add("usuarioH = '" + HU + "' ");
             query.Extras.Add("passH = '" + HP + "' ");
@@ -59,7 +62,12 @@ namespace Tezca.Logic.Activities
 
             using (var httpReponse = (HttpWebResponse)comm.send(query))
             {
-
+                if(httpReponse == null)
+                {
+                    Toast.MakeText(this, "Connection error",
+                    ToastLength.Short).Show();
+                    return;
+                }
                 using (var reader = new StreamReader(httpReponse.GetResponseStream()))
                 {
                     //JavaScriptSerializer js = new JavaScriptSerializer();
@@ -72,6 +80,8 @@ namespace Tezca.Logic.Activities
             {
                 User_data Udata = User_data.Instance;
                 Udata.User = response.UsuarioH[0];
+                Udata.BName = response.Nombre[0];
+                Udata.ID = response.NegocioID[0];
                 Intent intent = new Intent(this, typeof(ProductActivity));
                 StartActivity(intent);
             }
@@ -85,14 +95,14 @@ namespace Tezca.Logic.Activities
 
         void OnAddItemClick(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(AddItemActivity));
-            StartActivity(intent);
+            //var intent = new Intent(this, typeof(AddItemActivity));
+            //StartActivity(intent);
         }
         void OnInfoClick(object sender, EventArgs e)
         {
             
-            Intent intent = new Intent(this, typeof(InfoActivity));
-            StartActivity(intent);
+            //Intent intent = new Intent(this, typeof(InfoActivity));
+            //StartActivity(intent);
             
         }
     }

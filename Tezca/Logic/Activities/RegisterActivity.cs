@@ -57,16 +57,19 @@ namespace Tezca.Logic.Activities
             Query negocioQuery = new Query();
             negocioQuery.Tipo = 1;
             negocioQuery.Tablas.Add("Negocio(Nombre,UsuarioH,PassH) ");
-            negocioQuery.Valores.Add(Bname.Text);
-            negocioQuery.Valores.Add(""+hasher.getHash(User.Text));
-            negocioQuery.Valores.Add(""+hasher.getHash(Bname.Text));
+            string valor = "('" +Bname.Text + "','"+ hasher.getHash(User.Text) + "','" + hasher.getHash(Pass1.Text) + "')";
+
+            negocioQuery.Valores.Add(valor);
+            //negocioQuery.Valores.Add(""+hasher.getHash(Bname.Text));
             comm.send(negocioQuery);
             Query contactoQuery = new Query();
             contactoQuery.Tipo = 1;
-            contactoQuery.Tablas.Add("Contacto");
-            contactoQuery.Valores.Add("" + new Random().Next(1, 2024));
+            contactoQuery.Tablas.Add("Contacto(email,telefono) ");
+            valor = "('" + Email.Text + "','-')";
+            /*contactoQuery.Valores.Add("" + new Random().Next(1, 2024));
             contactoQuery.Valores.Add(Email.Text);
-            contactoQuery.Valores.Add("-");
+            contactoQuery.Valores.Add("-");*/
+            contactoQuery.Valores.Add(valor);
             comm.send(contactoQuery);
 
             Intent intent = new Intent(this, typeof(MainActivity));

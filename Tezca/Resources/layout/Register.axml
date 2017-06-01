@@ -11,6 +11,7 @@
         android:text="Register"
         android:gravity="center"
         android:layout_gravity="left"
+        android:textSize="40sp"
         android:layout_margin="20.0dp" />
     <EditText
         android:hint="User"

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:TObj="http://schemas.android.com/apk/res-auto">
+  <item
+       android:id="@+id/menu_return"
+       android:icon="@drawable/ic_keyboard_return_white_24dp"
+       TObj:showAsAction="always"
+       android:title="return" />
+  <item
+     android:id="@+id/menu_addChar"
+     android:icon="@drawable/ic_add_white_24dp"
+     TObj:showAsAction="always"
+     android:title="addChar" />
+</menu>

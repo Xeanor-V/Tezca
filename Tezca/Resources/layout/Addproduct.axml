@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_create"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#F57C00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Name"
+                style="@style/TextView_Light"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40.0dp"
+                android:id="@+id/Pname"
+                style="@style/EditText_Light_Product"
+                android:background="@drawable/normal_edittext"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="Price"
+                style="@style/TextView_Light"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40.0dp"
+                android:id="@+id/Pprice"
+                style="@style/EditText_Light_Product"
+                android:background="@drawable/normal_edittext"
+                android:layout_gravity="left" />
+            <TextView
+                android:text="Description"
+                style="@style/TextView_Light"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="100.0dp"
+                android:id="@+id/Pdesc"
+                style="@style/EditText_Light_Desc"
+                android:background="@drawable/normal_edittext"
+                android:layout_gravity="left" />
+            <Button
+                android:text="Continue"
+                android:textColor="@drawable/text_button"
+                style="@style/Button_Normal"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/Normal_Button"
+                android:id="@+id/PContinueButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

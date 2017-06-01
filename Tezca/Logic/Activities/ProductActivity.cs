@@ -28,9 +28,11 @@ namespace Tezca.Logic.Activities
 
             // FindViewById<TextView>(Resource.Id.Pp).Text = UserData.PassH[0];
             SetContentView(Resource.Layout.Products);
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar_main);
             SetSupportActionBar(toolbar);
-            SupportActionBar.Title = "My Toolbar";
+            SupportActionBar.Title = Udata.BName;
+
+            FindViewById<LinearLayout>(Resource.Id.product_LinearLayout).AddView(new Element_Builder(this, 0).Build_Card("Tacos"));
             /*var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetActionBar(toolbar);
             ActionBar.Title = "My Toolbar";*/
@@ -44,8 +46,13 @@ namespace Tezca.Logic.Activities
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            Toast.MakeText(this, "Action selected: " + item.TitleFormatted,
-                ToastLength.Short).Show();
+            switch (item.ItemId)
+            {
+                case Resource.Id.menu_add:
+                    Intent intent = new Intent(this, typeof(AddProductActivity));
+                    StartActivity(intent);
+                    break;
+            }
             return base.OnOptionsItemSelected(item);
         }
     }

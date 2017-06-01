@@ -82,17 +82,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Logic\Activities\AddItemActivity.cs" />
+    <Compile Include="Logic\Activities\AddCharActivity.cs" />
+    <Compile Include="Logic\Activities\AddProductActivity.cs" />
     <Compile Include="Logic\Activities\ProductActivity.cs" />
     <Compile Include="Logic\Activities\RegisterActivity.cs" />
     <Compile Include="Logic\Comm\Communication.cs" />
-    <Compile Include="Logic\Activities\InfoActivity.cs" />
     <Compile Include="Logic\Activities\MainActivity.cs" />
     <Compile Include="Logic\Comm\ProductResponse.cs" />
     <Compile Include="Logic\Comm\Query.cs" />
     <Compile Include="Logic\Comm\UserResponse.cs" />
     <Compile Include="Logic\Util\Element_Builder.cs" />
     <Compile Include="Logic\Util\Hash_Machine.cs" />
+    <Compile Include="Logic\Util\Product_data.cs" />
     <Compile Include="Logic\Util\User_data.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,16 +103,16 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\Additem.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\info.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Products.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Addproduct.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Addchar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -165,7 +166,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Register_EditText.xml" />
+    <AndroidResource Include="Resources\drawable\Register_EditText.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ProgessBar_Circular.xml" />
@@ -190,6 +193,23 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Menu\Top_menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Menu\Add_Menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_keyboard_return_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Product_EditText.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Menu\Char_Menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_add_white_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

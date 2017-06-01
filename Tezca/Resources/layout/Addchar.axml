@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:orientation="vertical">
+    android:orientation="vertical">
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_main"
+        android:id="@+id/toolbar_char"
         android:minHeight="?attr/actionBarSize"
         android:background="#F57C00"
         android:layout_width="match_parent"
@@ -12,12 +12,22 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="400dp"
+        android:id="@+id/Char_scrollView"
         android:fillViewport="true"
         android:layout_marginTop="20dp">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/product_LinearLayout" />
+            android:id="@+id/Char_LinearLayout" />
     </ScrollView>
+    <Button
+        android:text="Continue"
+        android:textColor="@drawable/text_button"
+        style="@style/Button_Normal"
+        android:layout_width="200dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/Normal_Button"
+        android:id="@+id/CContinueButton" />
 </LinearLayout>

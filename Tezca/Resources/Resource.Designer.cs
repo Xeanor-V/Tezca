@@ -1608,40 +1608,49 @@ namespace Tezca
 			public const int ic_action_content_create = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_business_white_24dp = 2130837583;
+			public const int ic_add_white_24dp = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_email_white_24dp = 2130837584;
+			public const int ic_business_white_24dp = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_lock_white_24dp = 2130837585;
+			public const int ic_email_white_24dp = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int Icon = 2130837586;
+			public const int ic_keyboard_return_white_24dp = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int Logo = 2130837587;
+			public const int ic_lock_white_24dp = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int Normal_Button = 2130837588;
+			public const int Icon = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int Normal_EditText = 2130837589;
-			
-			// aapt resource value: 0x7f02005a
-			public const int notification_template_icon_bg = 2130837594;
+			public const int Logo = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ProgessBar_Circular = 2130837590;
+			public const int Normal_Button = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int red_button = 2130837591;
+			public const int Normal_EditText = 2130837591;
+			
+			// aapt resource value: 0x7f02005d
+			public const int notification_template_icon_bg = 2130837597;
 			
 			// aapt resource value: 0x7f020058
-			public const int Register_EditText = 2130837592;
+			public const int Product_EditText = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int Text_Button = 2130837593;
+			public const int ProgessBar_Circular = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int red_button = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int Register_EditText = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int Text_Button = 2130837596;
 			
 			static Drawable()
 			{
@@ -1656,56 +1665,56 @@ namespace Tezca
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06006f
-			public const int Bname = 2131099759;
+			// aapt resource value: 0x7f060070
+			public const int Bname = 2131099760;
 			
-			// aapt resource value: 0x7f060059
-			public const int ContButton = 2131099737;
+			// aapt resource value: 0x7f060055
+			public const int CContinueButton = 2131099733;
 			
 			// aapt resource value: 0x7f060054
-			public const int DescInput = 2131099732;
-			
-			// aapt resource value: 0x7f060058
-			public const int DescText = 2131099736;
-			
-			// aapt resource value: 0x7f060070
-			public const int Email = 2131099760;
-			
-			// aapt resource value: 0x7f06005d
-			public const int LoginButton = 2131099741;
-			
-			// aapt resource value: 0x7f06005b
-			public const int LoginText = 2131099739;
-			
-			// aapt resource value: 0x7f06006d
-			public const int MyButton = 2131099757;
-			
-			// aapt resource value: 0x7f060056
-			public const int NameText = 2131099734;
-			
-			// aapt resource value: 0x7f060071
-			public const int Pass1 = 2131099761;
-			
-			// aapt resource value: 0x7f060072
-			public const int Pass2 = 2131099762;
-			
-			// aapt resource value: 0x7f06005c
-			public const int PassText = 2131099740;
+			public const int Char_LinearLayout = 2131099732;
 			
 			// aapt resource value: 0x7f060053
-			public const int PriceInput = 2131099731;
+			public const int Char_scrollView = 2131099731;
 			
-			// aapt resource value: 0x7f060057
-			public const int PriceText = 2131099735;
+			// aapt resource value: 0x7f060071
+			public const int Email = 2131099761;
 			
 			// aapt resource value: 0x7f06005e
-			public const int RegisterButton = 2131099742;
+			public const int LoginButton = 2131099742;
 			
-			// aapt resource value: 0x7f06006e
-			public const int User = 2131099758;
+			// aapt resource value: 0x7f06005c
+			public const int LoginText = 2131099740;
+			
+			// aapt resource value: 0x7f06005a
+			public const int PContinueButton = 2131099738;
+			
+			// aapt resource value: 0x7f060072
+			public const int Pass1 = 2131099762;
+			
+			// aapt resource value: 0x7f060073
+			public const int Pass2 = 2131099763;
+			
+			// aapt resource value: 0x7f06005d
+			public const int PassText = 2131099741;
+			
+			// aapt resource value: 0x7f060059
+			public const int Pdesc = 2131099737;
+			
+			// aapt resource value: 0x7f060057
+			public const int Pname = 2131099735;
+			
+			// aapt resource value: 0x7f060058
+			public const int Pprice = 2131099736;
 			
 			// aapt resource value: 0x7f06005f
-			public const int action0 = 2131099743;
+			public const int RegisterButton = 2131099743;
+			
+			// aapt resource value: 0x7f06006f
+			public const int User = 2131099759;
+			
+			// aapt resource value: 0x7f060060
+			public const int action0 = 2131099744;
 			
 			// aapt resource value: 0x7f060043
 			public const int action_bar = 2131099715;
@@ -1731,8 +1740,8 @@ namespace Tezca
 			// aapt resource value: 0x7f060044
 			public const int action_context_bar = 2131099716;
 			
-			// aapt resource value: 0x7f060063
-			public const int action_divider = 2131099747;
+			// aapt resource value: 0x7f060064
+			public const int action_divider = 2131099748;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1764,14 +1773,14 @@ namespace Tezca
 			// aapt resource value: 0x7f06002d
 			public const int buttonPanel = 2131099693;
 			
-			// aapt resource value: 0x7f060060
-			public const int cancel_action = 2131099744;
+			// aapt resource value: 0x7f060061
+			public const int cancel_action = 2131099745;
 			
 			// aapt resource value: 0x7f06003b
 			public const int checkbox = 2131099707;
 			
-			// aapt resource value: 0x7f060066
-			public const int chronometer = 2131099750;
+			// aapt resource value: 0x7f060067
+			public const int chronometer = 2131099751;
 			
 			// aapt resource value: 0x7f06001e
 			public const int collapseActionView = 2131099678;
@@ -1800,8 +1809,8 @@ namespace Tezca
 			// aapt resource value: 0x7f06001b
 			public const int end = 2131099675;
 			
-			// aapt resource value: 0x7f06006b
-			public const int end_padder = 2131099755;
+			// aapt resource value: 0x7f06006c
+			public const int end_padder = 2131099756;
 			
 			// aapt resource value: 0x7f060027
 			public const int expand_activities_button = 2131099687;
@@ -1824,20 +1833,20 @@ namespace Tezca
 			// aapt resource value: 0x7f060028
 			public const int image = 2131099688;
 			
-			// aapt resource value: 0x7f06005a
-			public const int imageView1 = 2131099738;
+			// aapt resource value: 0x7f06005b
+			public const int imageView1 = 2131099739;
 			
-			// aapt resource value: 0x7f06006a
-			public const int info = 2131099754;
+			// aapt resource value: 0x7f06006b
+			public const int info = 2131099755;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f060064
-			public const int line1 = 2131099748;
+			// aapt resource value: 0x7f060065
+			public const int line1 = 2131099749;
 			
-			// aapt resource value: 0x7f060068
-			public const int line3 = 2131099752;
+			// aapt resource value: 0x7f060069
+			public const int line3 = 2131099753;
 			
 			// aapt resource value: 0x7f06000a
 			public const int listMode = 2131099658;
@@ -1845,11 +1854,17 @@ namespace Tezca
 			// aapt resource value: 0x7f06002a
 			public const int list_item = 2131099690;
 			
-			// aapt resource value: 0x7f060062
-			public const int media_actions = 2131099746;
+			// aapt resource value: 0x7f060063
+			public const int media_actions = 2131099747;
 			
-			// aapt resource value: 0x7f060074
-			public const int menu_edit = 2131099764;
+			// aapt resource value: 0x7f060077
+			public const int menu_add = 2131099767;
+			
+			// aapt resource value: 0x7f060076
+			public const int menu_addChar = 2131099766;
+			
+			// aapt resource value: 0x7f060075
+			public const int menu_return = 2131099765;
 			
 			// aapt resource value: 0x7f06001c
 			public const int middle = 2131099676;
@@ -1859,9 +1874,6 @@ namespace Tezca
 			
 			// aapt resource value: 0x7f060015
 			public const int multiply = 2131099669;
-			
-			// aapt resource value: 0x7f060052
-			public const int nameInput = 2131099730;
 			
 			// aapt resource value: 0x7f060020
 			public const int never = 2131099680;
@@ -1875,8 +1887,11 @@ namespace Tezca
 			// aapt resource value: 0x7f06002f
 			public const int parentPanel = 2131099695;
 			
-			// aapt resource value: 0x7f060073
-			public const int progressBar = 2131099763;
+			// aapt resource value: 0x7f06006e
+			public const int product_LinearLayout = 2131099758;
+			
+			// aapt resource value: 0x7f060074
+			public const int progressBar = 2131099764;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -1886,9 +1901,6 @@ namespace Tezca
 			
 			// aapt resource value: 0x7f06003d
 			public const int radio = 2131099709;
-			
-			// aapt resource value: 0x7f060055
-			public const int saveButton = 2131099733;
 			
 			// aapt resource value: 0x7f060016
 			public const int screen = 2131099670;
@@ -1962,8 +1974,8 @@ namespace Tezca
 			// aapt resource value: 0x7f060019
 			public const int src_over = 2131099673;
 			
-			// aapt resource value: 0x7f060061
-			public const int status_bar_latest_event_content = 2131099745;
+			// aapt resource value: 0x7f060062
+			public const int status_bar_latest_event_content = 2131099746;
 			
 			// aapt resource value: 0x7f06004e
 			public const int submit_area = 2131099726;
@@ -1971,17 +1983,17 @@ namespace Tezca
 			// aapt resource value: 0x7f06000c
 			public const int tabMode = 2131099660;
 			
-			// aapt resource value: 0x7f060069
-			public const int text = 2131099753;
+			// aapt resource value: 0x7f06006a
+			public const int text = 2131099754;
 			
-			// aapt resource value: 0x7f060067
-			public const int text2 = 2131099751;
+			// aapt resource value: 0x7f060068
+			public const int text2 = 2131099752;
 			
 			// aapt resource value: 0x7f060036
 			public const int textSpacerNoButtons = 2131099702;
 			
-			// aapt resource value: 0x7f060065
-			public const int time = 2131099749;
+			// aapt resource value: 0x7f060066
+			public const int time = 2131099750;
 			
 			// aapt resource value: 0x7f06002c
 			public const int title = 2131099692;
@@ -1989,8 +2001,14 @@ namespace Tezca
 			// aapt resource value: 0x7f060031
 			public const int title_template = 2131099697;
 			
-			// aapt resource value: 0x7f06006c
-			public const int toolbar = 2131099756;
+			// aapt resource value: 0x7f060052
+			public const int toolbar_char = 2131099730;
+			
+			// aapt resource value: 0x7f060056
+			public const int toolbar_create = 2131099734;
+			
+			// aapt resource value: 0x7f06006d
+			public const int toolbar_main = 2131099757;
 			
 			// aapt resource value: 0x7f060030
 			public const int topPanel = 2131099696;
@@ -2124,10 +2142,10 @@ namespace Tezca
 			public const int abc_select_dialog_material = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int Additem = 2130903065;
+			public const int Addchar = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int info = 2130903066;
+			public const int Addproduct = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
 			public const int Main = 2130903067;
@@ -2188,7 +2206,13 @@ namespace Tezca
 		{
 			
 			// aapt resource value: 0x7f0c0000
-			public const int Top_menu = 2131492864;
+			public const int Add_Menu = 2131492864;
+			
+			// aapt resource value: 0x7f0c0001
+			public const int Char_Menu = 2131492865;
+			
+			// aapt resource value: 0x7f0c0002
+			public const int Top_menu = 2131492866;
 			
 			static Menu()
 			{
@@ -2732,8 +2756,8 @@ namespace Tezca
 			// aapt resource value: 0x7f07007d
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131165309;
 			
-			// aapt resource value: 0x7f070148
-			public const int Button_Normal = 2131165512;
+			// aapt resource value: 0x7f07014b
+			public const int Button_Normal = 2131165515;
 			
 			// aapt resource value: 0x7f070000
 			public const int CardView = 2131165184;
@@ -2744,14 +2768,20 @@ namespace Tezca
 			// aapt resource value: 0x7f070003
 			public const int CardView_Light = 2131165187;
 			
-			// aapt resource value: 0x7f070149
-			public const int Card_Normal = 2131165513;
+			// aapt resource value: 0x7f07014c
+			public const int Card_Normal = 2131165516;
 			
 			// aapt resource value: 0x7f070145
 			public const int EditText_Light = 2131165509;
 			
 			// aapt resource value: 0x7f070146
-			public const int EditText_Light_Register = 2131165510;
+			public const int EditText_Light_Desc = 2131165510;
+			
+			// aapt resource value: 0x7f070147
+			public const int EditText_Light_Product = 2131165511;
+			
+			// aapt resource value: 0x7f070148
+			public const int EditText_Light_Register = 2131165512;
 			
 			// aapt resource value: 0x7f07001b
 			public const int Platform_AppCompat = 2131165211;
@@ -2783,8 +2813,8 @@ namespace Tezca
 			// aapt resource value: 0x7f07001f
 			public const int Platform_Widget_AppCompat_Spinner = 2131165215;
 			
-			// aapt resource value: 0x7f07014a
-			public const int Prueba = 2131165514;
+			// aapt resource value: 0x7f07014d
+			public const int Prueba = 2131165517;
 			
 			// aapt resource value: 0x7f07002c
 			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131165228;
@@ -2984,8 +3014,11 @@ namespace Tezca
 			// aapt resource value: 0x7f0700e8
 			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131165416;
 			
-			// aapt resource value: 0x7f070147
-			public const int TextView_Light = 2131165511;
+			// aapt resource value: 0x7f070149
+			public const int TextView_Light = 2131165513;
+			
+			// aapt resource value: 0x7f07014a
+			public const int TextView_Light_Prog = 2131165514;
 			
 			// aapt resource value: 0x7f0700e9
 			public const int Theme_AppCompat = 2131165417;
@@ -3050,8 +3083,8 @@ namespace Tezca
 			// aapt resource value: 0x7f0700f6
 			public const int Theme_AppCompat_NoActionBar = 2131165430;
 			
-			// aapt resource value: 0x7f07014b
-			public const int Theme_Custom = 2131165515;
+			// aapt resource value: 0x7f07014e
+			public const int Theme_Custom = 2131165518;
 			
 			// aapt resource value: 0x7f0700f7
 			public const int ThemeOverlay_AppCompat = 2131165431;
