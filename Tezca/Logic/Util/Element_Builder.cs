@@ -34,18 +34,28 @@ namespace Tezca.Logic.Util
             //card.SetMinimumWidth(LayoutParams.MatchParent);
             //card.Elevation = 4.0f;
             CardView.LayoutParams LPar = new CardView.LayoutParams(LayoutParams.MatchParent, LayoutParams.WrapContent);
-            LPar.SetMargins(getDp(20), getDp(20), getDp(20), getDp(20));
+            LPar.SetMargins(getDp(20), getDp(50), getDp(20), getDp(100));
             card.LayoutParameters = LPar;
             card.Radius = 5.0F;
-            card.AddView(Build_Textview(text));
+
+            card.SetBackgroundColor(Color.ParseColor("#FFB74D"));
+
+            LinearLayout LL = Build_LL();
+
+
+           LL.AddView(Build_Textview(text));
 
             Button button = new Button(con);
             LinearLayout.LayoutParams LBut = new LinearLayout.LayoutParams(getDp(110), getDp(40));
             LBut.SetMargins(getDp(20), getDp(20), getDp(20), getDp(20));
+            LBut.Gravity = GravityFlags.Right;
             button.SetTextSize(ComplexUnitType.Sp, 20);
             button.Text = "Details";
+           
             button.SetBackgroundResource(Resource.Drawable.Normal_Button);
-            card.AddView(button);
+            button.LayoutParameters = LBut;
+            LL.AddView(button);
+            card.AddView(LL);
             return card;
         }
 
@@ -76,6 +86,17 @@ namespace Tezca.Logic.Util
             LL.AddView(Build_Textview( "Description"));
             LL.AddView(edesc);
             return LL;
+        }
+
+        public LinearLayout Build_LL( )
+        {
+            LinearLayout LL = new LinearLayout(con);
+            LinearLayout.LayoutParams Lparams = new LinearLayout.LayoutParams(LayoutParams.MatchParent, LayoutParams.WrapContent);
+            Lparams.SetMargins(0, 20, 20, 20);
+            LL.Orientation = Orientation.Vertical;
+            LL.LayoutParameters = Lparams;
+            return LL;
+
         }
 
         public LinearLayout Build_CharTop()
